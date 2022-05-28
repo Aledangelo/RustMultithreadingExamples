@@ -6,6 +6,7 @@ use std::{
 
 fn main() {
     println!("This is a simple example with 2 threads working on the same vector 📂");
+    println!();
 
     // Creo i miei dati li trasformo in mutex e li metto in ARC
     let data = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
