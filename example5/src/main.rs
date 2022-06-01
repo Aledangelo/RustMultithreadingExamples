@@ -41,7 +41,7 @@ fn main() {
                 let index = _b.n_elem;
                 let n: i32 = rand::thread_rng().gen_range(0, 50);
                 let index_us = usize::try_from(index).unwrap();
-                println!("Inert -> {}", n);
+                println!("Insert -> {}", n);
                 _b.arr[index_us] = n;
                 _b.n_elem += 1;
 
