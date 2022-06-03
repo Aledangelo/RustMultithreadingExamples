@@ -61,7 +61,7 @@ fn main() {
     for _ in 0..3 {
         let shared_dest = Arc::clone(&shared);
         let dest = thread::spawn(move || {
-            for _ in 0..6 {
+            for _j in 0..6 {
                 thread::sleep(Duration::from_millis(2000));
 
                 {
