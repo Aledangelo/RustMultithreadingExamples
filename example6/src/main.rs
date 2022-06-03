@@ -67,7 +67,7 @@ fn main() {
                 {
                     let mutex = &*shared_dest;
                     let lock = mutex.read().unwrap();
-                    println!("[READER-{}] a: {}, b: {}, a+b: {}", _i, lock.l, lock.s, (lock.l + lock.s));
+                    println!("[READER-{}] a: {}, b: {}, a+b: {}", (_i + 1), lock.l, lock.s, (lock.l + lock.s));
                 }
             }
         });
