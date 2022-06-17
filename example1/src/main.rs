@@ -1,3 +1,5 @@
+/* Simple example where two thread work on the same resource */
+
 use std::thread;
 use std::{
     sync::{Arc, Mutex},
